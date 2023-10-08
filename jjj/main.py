@@ -7,12 +7,12 @@ BOT_USERNAME: Final = '@wpmStore_bot'
 
 
 
-async def Yishengangry_command(update: Update, context:ContextTypes.DEFAULT_TYPE):
+async def yishengangry_command(update: Update, context:ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text('你很 fuck eh')
 
 
-async def flappu_command(update: Update, context:ContextTypes.DEFAULT_TYPE):
-    await update.message.replys_text('@flappu come to wpn store!')
+async def bestgunners_command(update: Update, context:ContextTypes.DEFAULT_TYPE):
+    await update.message.reply_text('I need @IlIIlIIlIIlIllIlIIl @Gerardtay @Flappuu come wpn store asap!')
 
 
 async def ooihurryup_command(update: Update, context:ContextTypes.DEFAULT_TYPE):
@@ -79,12 +79,11 @@ if __name__ == '__main__':
 
     #Commands
 
-    
-    app.add_handler(CommandHandler('flappu',flappu_command))
-  
-    app.add_handler(CommandHandler('Yishengangry', Yishengangry_command))
-    app.add_handler(CommandHandler('bruh',bruh_command))
+    app.add_handler(CommandHandler('yishengangry', yishengangry_command))
+    app.add_handler(CommandHandler('bestgunners',bestgunners_command))
     app.add_handler(CommandHandler('hurryup',ooihurryup_command))
+    app.add_handler(CommandHandler('bruh',bruh_command))
+  
 
 
     #messages
@@ -97,3 +96,7 @@ if __name__ == '__main__':
     #polls the bot
     print("Polling...")
     app.run_polling(poll_interval=1.0) #tells programme how often to check for update
+
+
+
+
